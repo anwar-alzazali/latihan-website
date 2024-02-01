@@ -79,7 +79,7 @@ body {
 }
 #hamburger-menu {
   display: none;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
 }
 
 /* navbar search form start*/
@@ -115,10 +115,10 @@ body {
   cursor: pointer;
 }
 #search-button {
-  font-size: 1.5rem;
+  font-size: 1.9rem;
 }
 #shopping-cart {
-  font-size: 1.5rem;
+  font-size: 1.9rem;
 }
 
 /* navbar serarch form end */
