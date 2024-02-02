@@ -18,23 +18,23 @@ document
 function handleHamburgerClick() {
   navbarNav.classList.toggle("active");
 }
-
-function handleDocumentClick(e) {
-  if (!hamburger.contains(e.target) && !navbarNav.contains(e.target)) {
-    navbarNav.classList.remove("active");
-  }
-}
-
 function handleSearchButtonClick() {
   searchForm.classList.toggle("active");
   searchBox.focus();
 }
 
-// function handleDocumentClick(e) {
-//   if (!searchButton.contains(e.target) && !navbarNav.contains(e.target)) {
-//     navbarNav.classList.remove("active");
-//   }
-// }
+function handleDocumentClick(e) {
+  {
+    if (!hamburger.contains(e.target) && !navbarNav.contains(e.target)) {
+      navbarNav.classList.remove("active");
+    }
+  }
+
+  if (!searchButton.contains(e.target) && !searchForm.contains(e.target)) {
+    searchForm.classList.remove("active");
+  }
+}
+
 // // Your existing JavaScript code remains here
 
 // // Example: Smooth scrolling for anchor links
