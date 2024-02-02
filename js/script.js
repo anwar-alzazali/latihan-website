@@ -37,27 +37,12 @@ function handleDocumentClick(e) {
 
 // // Your existing JavaScript code remains here
 
-// // Example: Smooth scrolling for anchor links
-// document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-//   anchor.addEventListener("click", function (e) {
-//     e.preventDefault();
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
 
-//     document.querySelector(this.getAttribute("href")).scrollIntoView({
-//       behavior: "smooth",
-//     });
-//   });
-// });
-
-// // slide show
-// const navbarNav = document.querySelector(".navbar-nav");
-// document.querySelector("#hamburger-menu").onclick = () => {
-//   navbarNav.classList.toggle("active");
-// };
-
-// // perintah hilangkan sidebar navigasdengan klik di mana saja selain di navbar dan hamburger menu
-// const hamburger = document.querySelector("#hamburger-menu");
-// document.addEventListener("click", function (e) {
-//   if (!hamburger.contains(e.target) && !navbarNav.contains(e.target)) {
-//     navbarNav.classList.remove("active");
-//   }
-// });
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth",
+    });
+  });
+});
