@@ -1,7 +1,7 @@
 :root {
-  --primary: #ae1df6; /* Update with your primary color */
+  --primary: #1d99d2; /* Update with your primary color */
   --bg: black; /* Update with your background color */
-  --second: #d1d3d3; /* Update with your secondary color */
+  --second: #f1f1f1; /* Update with your secondary color */
   --padding-small: 1rem;
 }
 
@@ -45,13 +45,13 @@ body {
 }
 
 .navbar .navbar-nav a {
-  color: var(--second);
+  color: var(--primary);
   display: inline-block;
   font-size: 1.2rem;
   margin: 0 1rem;
 }
 .navbar .navbar-nav a:hover {
-  color: var(--primary);
+  color: var(--second);
   transform: scale(0.9);
 
   rotate: 5deg;
@@ -61,7 +61,7 @@ body {
   content: "";
   display: block;
   padding-bottom: 0.4rem;
-  border-bottom: 0.3rem solid var(--primary);
+  border-bottom: 0.3rem solid var(--second);
   transform: scaleX(0);
   transition: 0.3s linear;
 }
@@ -70,12 +70,12 @@ body {
 }
 
 .navbar .navbar-extra a {
-  color: var(--second);
+  color: var(--primary);
   margin: 0 1rem;
 }
 
 .navbar .navbar-extra a:hover {
-  color: var(--primary);
+  color: var(--second);
 }
 #hamburger-menu {
   display: none;
@@ -128,7 +128,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url("../img/sepatu.jpg");
+  background-image: url("../img/yun.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -158,14 +158,14 @@ body {
 
 .hero .content h1 {
   font-size: 5em;
-  color: var(--second);
+  color: var(--primary);
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.9);
   line-height: 1.2;
   background: none;
 }
 
 .hero .content h1 span {
-  color: var(--primary);
+  color: var(--second);
   margin-left: 1rem;
   background: none;
 }
@@ -193,7 +193,7 @@ body {
 }
 .hero .content .cta:hover {
   color: var(--second);
-  background-color: red;
+  background-color: var(--primary);
 }
 
 /* styling for About profile */
@@ -209,7 +209,7 @@ body {
 .contact h2 {
   text-align: center;
   font-size: 2.6rem;
-  color: #ae1df6;
+  color: var(--primary);
   margin-bottom: 3rem;
 }
 .about .row {
