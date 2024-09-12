@@ -366,6 +366,11 @@ footer {
   html {
     font-size: 69.5%;
   }
+  .navbar .navbar-logo img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
 
   #hamburger-menu {
     display: inline-block;
